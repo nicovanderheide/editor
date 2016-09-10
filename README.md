@@ -1,7 +1,7 @@
 # editor
 A locale properties editor
 
-## codenvy factory (https://beta.codenvy.com/f?id=3tz2j3urktrvdlf1)
+## [codenvy factory] (https://beta.codenvy.com/f?id=3tz2j3urktrvdlf1)
 
 Download the executable jar:  
 ```bash.sh
