@@ -1,0 +1,25 @@
+<!DOCTYPE configuration>
+<configuration debug="false">
+	<statusListener class="ch.qos.logback.core.status.NopStatusListener" />	
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"/>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>TRACE</level>
+		</filter>
+		<encoder>
+			<pattern>%d{ISO8601} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="ch.qos.logback" level="OFF" />
+	<logger name="org.springframework" level="WARN" />
+	<logger name="org.apache" level="WARN" />
+	<logger name="org.apache.commons.httpclient" level="WARN" />
+	<logger name="httpclient.wire" level="WARN" />
+	<logger name="org.glassfish.jersey.filter" level="WARN" />
+	
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

@@ -1,0 +1,48 @@
+#top-form select {
+	width: 200px;
+}
+#top-form input {
+	width: 400px;
+}
+
+.container {
+	width: 80%;
+}
+
+#editorScreen {
+	height: 400px; 
+	border: 1px solid #000000;
+}
+
+#editorScreen select {
+	margin: 0; 
+	padding: 0; 
+	height: 100%; 
+	width: 50%; 
+	float: left;
+	border-right: 1 solid #000;
+}
+
+#editorScreen #formList {
+	overflow-y: scroll; 
+	margin: 0; 
+	padding: 0; 
+	height: 100%; 
+	width: 50%; 
+	float: right;
+}
+
+#editorScreen #formList form,
+#editorScreen #formList .form-button  {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+
+#editorScreen #formList form .input-group {
+	width: 95%;
+}
+
+#editorScreen #formList form.ng-dirty .btn {
+	background-color: red;
+}

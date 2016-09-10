@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Messages Editor - login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="app/images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="app/images/favicon.ico"
+	type="image/x-icon" />
+<style type="text/css">
+@import url("bootstrap/css/bootstrap.min.css");
+</style>
+</head>
+<body>
+	<div class="container">
+		<br />
+		<div class="col-sm-4 col-sm-offset-4 centering">
+			<form id="loginForm" name="loginForm"
+				action="j_spring_security_check" method="POST">
+				<div id="login-box" class="panel panel-default">
+					<div class="panel-heading">Login</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<input id="username" name="username" type="text"
+								class="form-control spacer" placeholder="Gebruikersnaam" /> <input
+								id="password" name="password" type="password"
+								class="form-control spacer" placeholder="Wachtwoord" />
+						</div>
+						<button type="submit" class="btn btn-success pull-right">
+							<span class="glyphicon glyphicon-log-in"></span> Login
+						</button>
+					</div>
+				</div>
+			</form>
+			<a href="manual.pdf" target="_blank"><button class="btn btn-info"><span class="glyphicon glyphicon-question-sign"></span> Manual</button></a>
+		</div>
+	</div>
+</body>
+</html>
