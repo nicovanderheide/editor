@@ -1,12 +1,1 @@
-download de executable jar:  http://www.apache.org/dyn/closer.lua/jackrabbit/2.11.3/jackrabbit-standalone-2.11.3.jar
 
-een lokale webdav locatie te starten:
-
-jdk/java -jar jackrabbit-standalone-2.11.3.jar -p 18080
-
-mvn clean install test jetty:run
-
-de website draait op: http://localhost:8080/editor
-
-gebruikernamen zijn: 'ROLE_SUPER_ADMIN', 'ROLE_ADMIN', 'ROLE_VIEWER'
-wachtwoord maakt niet uit, de authenticatie methode is sterk versimpeld
