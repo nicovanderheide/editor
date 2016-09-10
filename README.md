@@ -1,14 +1,17 @@
 # editor
 A locale properties editor
 
-download the executable jar:  http://ftp.nluug.nl/internet/apache/jackrabbit/2.13.2/jackrabbit-standalone-2.13.2.jar
-
-To setup a 'local' jackrabbit webdav location the project can connect to use:
-```cmd
-jdk/java -jar jackrabbit-standalone-2.13.2.jar -p 18080
+Download the executable jar:  
+```bash.sh
+wget http://ftp.nluug.nl/internet/apache/jackrabbit/2.13.2/jackrabbit-standalone-2.13.2.jar
 ```
 
-```cmd
+To setup a 'local' jackrabbit webdav location the project can connect to use:
+```bash.sh
+java -jar jackrabbit-standalone-2.13.2.jar -p 18080
+```
+
+```bash.sh
 mvn clean install test jetty:run
 ```
 The jetty webserver will be available on: [localserver](http://localhost:8080/editor)
