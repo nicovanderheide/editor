@@ -1,0 +1,6 @@
+jdk:
+ - openjdk6
+script:
+mvn clean install verify
+after_success:
+after_failure:
