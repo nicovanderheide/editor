@@ -1,5 +1,9 @@
+sudo: required
 language: java
-sudo: false
+before_install:
+	- "wget http://ftp.nluug.nl/internet/apache/jackrabbit/2.13.2/jackrabbit-standalone-2.13.2.jar"
+	- "java -jar jackrabbit-standalone-2.13.2.jar -p 18080"
 script: mvn clean install verify
 after_success:
+  - script: mvn clean install verify
 after_failure:
