@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nicovanderheide/editor.svg)](https://travis-ci.org/nicovanderheide/editor)
+
 # editor
 A locale properties editor
 
