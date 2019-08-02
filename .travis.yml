@@ -1,9 +1,0 @@
-sudo: required
-language: java
-before_install:
-- wget http://ftp.nluug.nl/internet/apache/jackrabbit/2.12.4/jackrabbit-standalone-2.12.4.jar
-- nohup java -jar jackrabbit-standalone-2.12.4.jar -p 18080 &
-script: mvn clean install test
-after_success:
-#- script: mvn clean install test jetty:run
-after_failure:
