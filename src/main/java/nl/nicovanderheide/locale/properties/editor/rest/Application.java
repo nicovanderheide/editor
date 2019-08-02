@@ -1,5 +1,6 @@
 package nl.nicovanderheide.locale.properties.editor.rest;
 
+import org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JacksonJaxbJsonProvider;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.ServerProperties;
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
@@ -15,7 +16,7 @@ public class Application extends ResourceConfig {
     	register(RolesAllowedDynamicFeature.class, 1);
         register(RequestContextFilter.class);
 		/* Instead of JacksonFeature.class so we can do our own JsonProcessingException mapping */
-        register(com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider.class);
+        register(JacksonJaxbJsonProvider.class);
         
         register(PropertiesController.class);
 
